@@ -18,11 +18,10 @@ L = [(0,0,0), (0,0,1), (0,1,0), (0,1,1), (1,0,0), (1,0,1), (1,1,0), (1,1,1)]
 
 # El código que lo plotea todo
 
-for i in L:
-    x = [i[0] for i in L]
-    y = [i[1] for i in L]
-    z = [i[2] for i in L]
-    ax.scatter(x, y, z, color="black", s=100)
+x = [i[0] for i in L]
+y = [i[1] for i in L]
+z = [i[2] for i in L]
+ax.scatter(x, y, z, color="black", s=100)
 
 ax.set_axis_off()
 plt.show()
